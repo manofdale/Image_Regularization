@@ -7,6 +7,23 @@ PROJECT REPORT AND POSTER
 	polat_ceng566_FinalPoster.pdf
 	
 *********************************************************
+IMAGE REGULARIZATION
+*********************************************************
+A common inverse problem of image processing is regularization of images. As any regularization problem, the 
+solution requires one to introduce apriori information. For example by assuming that high 
+variation in an image is not natural, denoising and texture removal can be achieved. To do that, one needs to use 
+a formal representation that can incorporate such assumptions. For this purpose, energy functionals are used.
+High variation and other undesired properties increase the energy. Thus, the whole regularization task 
+can be considered as a minimization problem. 
+
+Although images can have high variation, this is often undesired since the computational resources to process 
+and classify an image and the amount of information to represent it increase. Therefore,  reducing the amount of 
+variation within an image and reducing the edge count in a meaningful way (i.e. acquiring a cartoon image = a 
+simpler and more compact representation of the image) is a prominent interest area for image processing.
+
+In this project, new sets of partial differential equations are introduced that modify and improve Ambrosio
+Tortelli approximation of Mumford Shah formula to achieve better image regularization.
+*********************************************************
 IMPLEMENTATION 
 
 Implementation of the modification 1 idea is available in:
@@ -31,7 +48,7 @@ octave
 
 Or start octave from the Applications and when the octave command prompt opens, enter into the right folder by
 
- cd some_path/to/Polat_ceng566_Final
+ cd some_path/to/Image_Regularization
 
 You can run the examples by executing the script
  polat_FinalProject
